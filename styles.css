@@ -1,0 +1,185 @@
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Lucida Console;
+  background: linear-gradient(242deg, rgba(2,0,36,1) 0%, rgba(9,9,121,0.03154765324098385) 0%, rgba(0,212,255,0.3060574571625525) 100%);
+}
+
+a {
+  text-decoration: none;
+}
+
+.header{
+  width: 100%;
+  background-color: 	rgb(52, 86, 139);
+  position: fixed;
+}
+
+#navbar ul{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+}
+
+#navbar ul a{
+  display: block;
+  color: rgb(237, 241, 255);
+  padding: 1em 1.5em;
+  font-weight: bold;
+}
+
+#navbar ul a:hover{
+  transform: scale(1.1);
+}
+
+.main {
+  padding-top: 5em;
+}
+
+#welcome-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  text-align: center;
+  vertical-align: center;
+  height: calc(100vh - 50px);
+}
+
+#welcome-section h1{
+  font-size: 3rem;
+}
+
+#welcome-section p{
+  font-size: 1.5rem;
+}
+
+#welcome-section a{
+ color: rgb(26, 75, 255);
+ font-weight: bold;
+}
+
+span{
+  color: rgb(26, 75, 255);
+  font-weight: bold;
+}
+
+.welcome-information {
+  width: 50%;
+}
+
+.welcome-img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-size: contain;
+}
+
+#projects {
+  padding-top: 5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.project-title { 
+  margin: .5em;
+  font-size: 2.5rem;
+}
+
+.project-tile{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 24%;
+   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+   background-color: white;
+   margin: .5em auto;
+   border-radius: 10px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.container {
+  padding: 2em;
+}
+
+.container p{
+  padding-top: .5em;
+  color: gray;
+}
+
+.card-button{
+  border: none;
+  padding: 12px 24px;
+  border-radius: 50px;
+  font-weight: 600;
+  color: #0077ff;
+  background-color: #e0efff;
+  margin: .5em auto 0;
+  display: block;
+  cursor: pointer;
+}
+
+.footer {
+  margin-top: 10em;
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+
+.footer-text {
+  padding: 1em;
+}
+
+#profile-link {
+  font-size: 1.3rem;
+  background-color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+@media (max-width: 700px) {
+  #welcome-section {
+    flex-direction: column;
+  }
+
+  .welcome-img {
+  width: 70%;
+  height: 50%;
+  }
+
+  #welcome-section h1{
+  font-size: 2.5rem;
+}
+  .welcome-information {
+  width: 100%;
+}
+
+.card {
+  width: 49%;
+}
+
+#projects {
+  justify-content: initial;
+}
+
+}
